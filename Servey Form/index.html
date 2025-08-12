@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>General Survey form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" id="name" placeholder="Enter your name">
+
+        </div>
+        <div class="form-control">
+            <label for="email" id="name-label">Email: </label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-control">
+            <label for="age" id="age-label">Age: </label>
+            <input type="text" id="age" placeholder="Enter your age ">
+        </div>
+        <div class="form-control">
+            <label>Which option best describes you?
+                <select name="role" id="role">
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="enginner">Enginner</option>
+                    <option value="intern">Intern</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="other">Other</option>
+                </select>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>
+                How often do you use Github?
+            </label>
+            <label>
+                <input type="radio" name="Github" value="Sometimes">Sometimes
+            </label>
+            <label>
+                <input type="radio" name="Github" value="Regularly">Regularly
+            </label>
+            <label>
+                <input type="radio" name="Github" value="Rarely">Rarely
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Languages and Frameworks known
+                <small>(Check all that apply)</small>
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="C" >C
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="C++">C++
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="C#">C#
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="java">Java
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="python">Python
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="javaScript">JavaScript
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="react">React
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="angular">Angular
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="django">Django
+            </label>
+            <label >
+                <input type="checkbox" name="inp" value="spring">Spring
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comment">Any comment or suggestions : </label>
+            <textarea name="comment" cols="40" rows="3" placeholder="Enter your thoughts here..."></textarea>
+        </div>
+        <div >
+            <label >
+                <button type="submit" id="submit">Submit</button>
+            </label>
+        </div>
+    </form>
+</body>
+
+</html>
